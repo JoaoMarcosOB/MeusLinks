@@ -11,7 +11,7 @@
   --surface-color: rgb(87, 15, 15);
   --surface-color-hover: white;
   --highlight-color: white;
-  --switch-bg-url: url(/assets/moon-stars.svg);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 .light {
   --text-color: rgb(87, 15, 15);
@@ -20,7 +20,7 @@
   --surface-color: white;
   --surface-color-hover: rgb(87, 15, 15);
   --highlight-color: rgb(87, 15, 15);
-  --switch-bg-url-light: url(/assets/sun.svg);
+  --switch-bg-url-light: url(./assets/sun.svg);
 }
 .light:hover {
   --text-color-hover: white;
