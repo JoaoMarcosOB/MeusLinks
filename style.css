@@ -5,21 +5,21 @@
 }
 :root {
   --text-color: white;
-  --text-color-hover: rgb(87, 15, 15);
-  --bg-url: rgb(87, 15, 15);
+  --text-color-hover: rgb(40, 103, 30);
+  --bg-url: rgb(40, 103, 30);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgb(87, 15, 15);
+  --surface-color: rgb(40, 103, 30);
   --surface-color-hover: white;
   --highlight-color: white;
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 .light {
-  --text-color: rgb(87, 15, 15);
+  --text-color: rgb(40, 103, 30);
   --bg-url: white;
-  --stroke-color: rgb(87, 15, 15);
+  --stroke-color: rgb(40, 103, 30);
   --surface-color: white;
-  --surface-color-hover: rgb(87, 15, 15);
-  --highlight-color: rgb(87, 15, 15);
+  --surface-color-hover: rgb(40, 103, 30);
+  --highlight-color: rgb(40, 103, 30);
   --switch-bg-url-light: url(./assets/sun.svg);
 }
 .light:hover {
@@ -55,12 +55,17 @@ body * {
   border-radius: 50%;
 }
 
-#profile p {
+#profile p a {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+  text-decoration: none;
 }
-.light #profile p {
+#profile p a:hover {
+  text-decoration: underline;
+}
+
+.light #profile p a {
   color: var(--stroke-color);
 }
 /*switch - botão de troca */
@@ -82,9 +87,15 @@ body * {
   z-index: 1;
   animation: slide-back 0.3s;
 }
+#switch button:hover {
+  border: 1.5px solid rgb(40, 103, 30);
+}
 .light #switch button {
   animation: slide-in 0.3s forwards;
-  background: rgb(87, 15, 15) var(--switch-bg-url-light) no-repeat center;
+  background: rgb(40, 103, 30) var(--switch-bg-url-light) no-repeat center;
+}
+.light #switch button:hover {
+  border: 1.5px solid white;
 }
 #switch span {
   display: block;
