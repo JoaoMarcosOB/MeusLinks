@@ -4,34 +4,29 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: white;
-  --text-color-hover: rgb(40, 103, 30);
-  --bg-url: rgb(40, 103, 30);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgb(40, 103, 30);
-  --surface-color-hover: white;
-  --highlight-color: white;
+  --text-color: snow;
+  --text-color-hover: black;
+  --bg-url: black;
+  --stroke-color: snow;
+  --surface-color: black;
+  --surface-color-hover: snow;
+  --highlight-color: snow;
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 .light {
-  --text-color: rgb(40, 103, 30);
-  --bg-url: white;
-  --stroke-color: rgb(40, 103, 30);
-  --surface-color: white;
-  --surface-color-hover: rgb(40, 103, 30);
-  --highlight-color: rgb(40, 103, 30);
+  --text-color: black;
+  --bg-url: snow;
+  --stroke-color: black;
+  --surface-color: snow;
+  --surface-color-hover: black;
+  --highlight-color: black;
   --switch-bg-url-light: url(./assets/sun.svg);
 }
 .light:hover {
-  --text-color-hover: white;
+  --text-color-hover: snow;
 }
 body {
-  /*
-  background-image: url(./assets/assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position:top center;
-  background-size: cover;
-  */
+  
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
@@ -77,7 +72,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background: snow var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -88,14 +83,14 @@ body * {
   animation: slide-back 0.3s;
 }
 #switch button:hover {
-  border: 1.5px solid rgb(40, 103, 30);
+  border: 1.5px solid black;
 }
 .light #switch button {
   animation: slide-in 0.3s forwards;
-  background: rgb(40, 103, 30) var(--switch-bg-url-light) no-repeat center;
+  background: black var(--switch-bg-url-light) no-repeat center;
 }
 .light #switch button:hover {
-  border: 1.5px solid white;
+  border: 1.5px solid snow;
 }
 #switch span {
   display: block;
@@ -121,6 +116,7 @@ ul li a {
   padding: 16px 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
@@ -146,7 +142,7 @@ ul li a:hover {
   border-radius: 50%;
 }
 #social-links a:hover {
-  border: 1.5px solid white;
+  border: 1.5px solid snow;
   padding: 16px;
 }
 .light #social-links a:hover {
@@ -166,7 +162,7 @@ footer {
     --bg-url: url(rgb(87, 15, 15));
   }
   .light {
-    --bg-url: url(white);
+    --bg-url: url(snow);
   }
 }
 /* animation */
